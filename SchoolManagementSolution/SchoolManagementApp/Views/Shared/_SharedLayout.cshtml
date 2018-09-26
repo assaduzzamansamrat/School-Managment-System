@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @RenderSection("title")
+    <link rel="stylesheet" href="~/Content/SharedLayoutStyleSheet.css">
+    <link rel="stylesheet" href="~/Content/cssbtn/bootstrap.min.css">
+    <script src="~/scripts/SharedLayoutScript.js"></script>
+    <script src="~/scripts/btnscripts/jquery.min.js"></script>
+    <script src="~/scripts/btnscripts/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Dash Board</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <div id="schooltitle">
+        <h1 style="color:white; text-align:center;">ABC HIgh School</h1>
+    </div>
+
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        @RenderBody()
+    </div>
+
+</body>
+</html>
